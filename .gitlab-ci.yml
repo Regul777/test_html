@@ -4,11 +4,11 @@ pages: # the job must be named pages
   script:
 #    - npm ci
 #    - npm run build
-    - mkdir -p ./public
+#    - mkdir -p ./public
 #    - mv public public-vue # GitLab Pages hooks on the public folder
 #    - mv dist public # rename the dist folder (result of npm run build)
-    - cp ./src/index.html ./public/index.html # GitLab Pages hooks on the public folder
-    - cp ./src/index.html ./src/index2.html # GitLab Pages hooks on the public folder
+#    - cp ./src/index.html ./public/index.html # GitLab Pages hooks on the public folder
+#    - cp ./src/index.html ./src/index2.html # GitLab Pages hooks on the public folder
     # optionally, you can activate gzip support with the following line:
 #    - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec gzip -f -k {} \;
   artifacts:
