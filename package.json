@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "touch i_am_build.txt"
+    "predeploy": "mkdir -p dist && touch dist/i_am_predeploy.txt",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Regul777/test_html/issues"
   },
-  "homepage": "https://github.com/Regul777/test_html#readme"
+  "homepage": "https://github.com/Regul777/test_html#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
