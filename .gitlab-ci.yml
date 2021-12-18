@@ -1,12 +1,13 @@
+image: node:latest
+
 pages: # the job must be named pages
+  stage: deploy
   artifacts:
     paths:
       - build
-  image: node:latest
-  stage: deploy
   script:
-#    - npm ci
-#    - npm run build
+    - npm ci
+    - npm run build
     - mkdir -p build
 #    - mv public public-vue # GitLab Pages hooks on the public folder
 #    - mv dist public # rename the dist folder (result of npm run build)
