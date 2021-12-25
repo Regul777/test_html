@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cp src/index.html build/",
+    "build": "mkdir -p build && cp src/index.html build/",
     "deploy": "gh-pages -d build"
   },
   "repository": {
