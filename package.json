@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "predeploy": "mkdir -p dist && touch dist/i_am_predeploy.txt",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
