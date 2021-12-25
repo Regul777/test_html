@@ -44,5 +44,9 @@ jobs:
       - name: Install npm dependencies
         run: npm install # switch to `ci` when Node.js 6.x is dropped
 
-      - name: Run tests
-        run: npm test
+      - name: Deploy with gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
